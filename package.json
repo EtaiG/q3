@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "lint"
   },
   "repository": {
     "type": "git",
