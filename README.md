@@ -1,5 +1,5 @@
-# My current stack:
-curent stack:
+# My scaffolding:
+current stack:
  - React for rendering
  - MobX for state management
  - babel + webpack for transpiling + dev server
