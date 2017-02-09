@@ -1,16 +1,17 @@
 import { observable } from 'mobx';
 
 class AppState {
-  @observable timer = 0;
+  @observable scrollY = 0;
+  @observable triggered = false;
 
   constructor() {
-    setInterval(() => {
-      this.timer += 1;
-    }, 1000);
+    window.onscroll = () => {
+      this.scrollY = scrollY;
+    }
   }
 
-  resetTimer() {
-    this.timer = 0;
+  trigger = () => {
+    this.triggered = !this.triggered;
   }
 }
 
